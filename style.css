@@ -1,0 +1,74 @@
+h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: salmon;
+    border: 0;
+    margin: 0;
+  }
+  .subtitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 12px;
+  }
+  .links{
+      border-right: 1px solid black;
+      padding-right: 15px;
+  }
+  .texto{
+    text-align: center;
+  }
+  .centrado{
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+  }
+  #derecha{
+    float: right;
+    width: 50%;
+  }
+  #izquierda{
+    width:50%;
+  } 
+  .imagenes{
+    width: 100%;
+  }
+  #imagen{
+    width: 100%;
+  }
+  #autor1{
+    display: flex;
+    justify-content: flex-start;
+  }
+  #textoCentrado{
+    display: flex;
+    justify-content: center;
+  }
+  .fixed{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 10%;
+    background-color:  salmon;
+    border-style: solid;
+    border-color: black;
+    left: 85%;
+    top: 90%;
+    text-align: center;
+  }  
+  .fixed ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fixed ul li {
+    margin: 0;
+    padding: 0;
+    text-wrap: balance;
+  }
+  .izquierda1{
+    inline-size: ;
+  }
