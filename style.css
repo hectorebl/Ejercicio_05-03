@@ -1,74 +1,170 @@
 h1{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: salmon;
-    border: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: salmon;
+  border: 0;
+  margin: 0;
+}
+.subtitulo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 12px;
+}
+.links{
+    border-right: 1px solid black;
+    padding-right: 15px;
+}
+.texto{
+  text-align: center;
+}
+
+.centrado{
+  display: flex;
+  justify-content: center;
+ flex-direction: column;
+}
+.derecha{
+  float: right;
+  width: 50%;
+}
+.izquierda{
+  width:50%;
+} 
+.imagenes{
+  width: 100%;
+}
+#imagen{
+  width: 100%;
+}
+.fixed{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 10%;
+  background-color:  salmon;
+  border-style: solid;
+  border-color: black;
+  left: 85%;
+  top: 90%;
+  text-align: center;
+}  
+.fixed ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fixed ul li {
+  margin: 0;
+  padding: 0;
+  text-wrap: balance;
+}
+#menu2, #seccion2h2, .onlyMonitor{
+  display: none;
+}
+@media (min-width: 1024px){
+  h1{
+    top: 0;
     margin: 0;
+    padding: 0;
+    background-color: salmon;
+    width: 100%;
+    text-align: center;
+  }
+  #left{
+    width: 20%;
   }
   .subtitulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     list-style: none;
-    font-size: 12px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .leftside, .rightside, .onlymonitor{
+    border: 1px solid black;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
   }
   .links{
-      border-right: 1px solid black;
-      padding-right: 15px;
-  }
-  .texto{
     text-align: center;
   }
-  .centrado{
-    display: flex;
-    justify-content: center;
-   flex-direction: column;
+  ul li{
+      margin-bottom: 15px;
   }
-  #derecha{
+  .leftside{
+    width: 29.7%; 
+    float: left;
+    height: 100vh;
+  }
+  .rightside{
+    width: 70%;
     float: right;
-    width: 50%;
-  }
-  #izquierda{
-    width:50%;
-  } 
-  .imagenes{
-    width: 100%;
-  }
-  #imagen{
-    width: 100%;
-  }
-  #autor1{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 45vh;
   }
-  #textoCentrado{
-    display: flex;
-    justify-content: center;
+  .onlymonitor{
+      width: 70%;
+      float: right;
+      height: 37.6vh;
+      display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
-  .fixed{
+  #imagen, .imagenes{
+    height: 20%;
+    width: 40%;
+    display: block;
+margin-left: auto;
+margin-right: auto;
+  }
+  .izquierda, .derecha, .centrado{
     display: flex;
     flex-direction: column;
-    position: fixed;
-    width: 10%;
-    background-color:  salmon;
-    border-style: solid;
-    border-color: black;
-    left: 85%;
-    top: 90%;
+    position: relative;
+    top: 5%;
+  }
+  .texto{
+    width: 30%;
     text-align: center;
-  }  
-  .fixed ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    display: block;
+margin-left: auto;
+margin-right: auto;
   }
-  
-  .fixed ul li {
-    margin: 0;
-    padding: 0;
-    text-wrap: balance;
+  h4{
+    display: block;
+margin-left: auto;
+margin-right: auto;
   }
-  .izquierda1{
-    inline-size: ;
-  }
+ .fixed{
+  position:relative;
+  top: 55%;
+ }
+ #seccion2h2{
+  text-align: center;
+ }
+ .imagenesAbajo{
+  width: 100%;
+  height: 70%;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+ }
+ button {
+  background-color: white;
+  border: black solid 1px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+}
